@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seroost</title>
+	<style>
+		html {
+			background-image: linear-gradient(#866, #140000);
+			font-family: "Iosevka Nerd Font", monospace;
+			background-repeat: no-repeat;
+			min-height: 100%;
+		}
+		body {
+			color: #BBB;
+			text-align: center;
+		}		
+		h3 {
+			margin: 0 7px 0 0;
+		}
+		#query {
+			width: 75%;
+			height: 5%;
+		}
+		#title {
+			font-size: 300%;
+			margin: 3%;
+			color: #433;
+			font-family: "Iosevka NF Heavy", "Noto Sans Mono", monospace;
+		}
+		#results {
+			margin: 30px 0 0 5%;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			flex-direction: column;
+			text-decoration: none;
+		}
+		.result {
+			border: 2px #533 solid;
+			border-radius: 5px;
+			color: #DDD;
+			background-color: #100;
+			width: 75%;
+			max-height: 20px;
+			padding: 3px 5px;
+			display: flex;
+			flex-direction: row;
+		}
+		.content {
+			vertical-align: middle;
+		}
+	</style>
+    </head>
+    <body>
+        <h1 id="title">SEROOST</h1>
+	<input id="query" type="text" placeholder="Provide your query..." onkeypress="search()"/>
+        <div id="results"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
